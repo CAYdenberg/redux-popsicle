@@ -1,0 +1,27 @@
+{
+  "name": "redux-popsicle",
+  "version": "0.0.1",
+  "description": "Manage network requests in redux actions with simple, testable object config",
+  "main": "build/node.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "redux",
+    "popsicle",
+    "http",
+    "REST",
+    "json",
+    "state",
+    "management"
+  ],
+  "author": "@CAYdenberg",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7",
+    "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "popsicle": "^10.0.1"
+  }
+}
