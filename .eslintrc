@@ -3,5 +3,39 @@
   "env": {
     "node": true,
     "jest": true
+  },
+
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {"SwitchCase": 1}
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "no-console": [
+      "warn"
+    ],
+    "no-unused-vars": [
+      "warn", {
+        "varsIgnorePattern": "React"
+      }
+    ],
+    "comma-dangle": 0,
+    "prefer-promise-reject-errors": 0
   }
 }

@@ -4,8 +4,8 @@
   "description": "Manage network requests in redux actions with simple, testable object config",
   "main": "build/node.js",
   "scripts": {
-    "build-node": "./node_modules/.bin/parcel build index.js --target node --out-file node.js",
-    "build-browser": "./node_modules/.bin/parcel build index.js --target browser --out-file browser.js",
+    "build-node": "./node_modules/.bin/parcel build src/index.js --target node --out-file node.js",
+    "build-browser": "./node_modules/.bin/parcel build src/index.js --target browser --out-file browser.js",
     "prepublish": "npm run build-node && npm run build-browser",
     "test": "./node_modules/.bin/jest --watch --env=jsdom"
   },
