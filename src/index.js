@@ -7,16 +7,19 @@ export const popsicleRequest = ticket => {
 }
 
 export function getMiddleware(doRequest = popsicleRequest) {
-  return () => next => action => {
+  return store => next => action => {
+    next(action)
+
     if (action.popsicle) {
-      doRequest(action.popsicle).then(body => {
-        return next(action.response(body, action))
+      const {dispatch} = store
+
+      return doRequest(action.popsicle).then(body => {
+        return dispatch({type: '@@redux-popsicle/RESPONSE'})
+
       }).catch(status => {
-        return next({type: action.error || '@@POPSICLE/ERROR', status})
+        return dispatch({type: '@@redux-popsicle/ERROR'})
       })
     }
-
-    return next(action)
   }
 }
 

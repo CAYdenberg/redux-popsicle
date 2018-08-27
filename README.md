@@ -10,7 +10,7 @@ npm i --save redux-popsicle
 import reduxPopsicle from 'redux-popsicle'
 
 // when you create your store
-const store = createStore(reducer, initialState, applyMiddleware([reduxPopsicle, ...otherMiddleware))
+const store = createStore(reducer, initialState, applyMiddleware([reduxPopsicle, ...otherMiddleware]))
 ```
 
 ## How it works

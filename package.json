@@ -21,6 +21,8 @@
   "author": "@CAYdenberg",
   "license": "MIT",
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.4.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.14.0",
@@ -32,5 +34,8 @@
   },
   "dependencies": {
     "popsicle": "^10.0.1"
+  },
+  "jest": {
+    "clearMocks": true
   }
 }
