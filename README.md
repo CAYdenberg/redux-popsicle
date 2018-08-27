@@ -1,4 +1,4 @@
-Redux middleware for making HTTP requests via the [Popsicle](https://www.npmjs.com/package/popsicle) library. The emphasis is on keep actions as simple objects, to keep them testable.
+Redux middleware for making HTTP requests via the [Popsicle](https://www.npmjs.com/package/popsicle) library. The emphasis is on keeping actions as simple objects, making them easy to test. Action creators remain pure functions that describe the HTTP request, and what to do with the response.
 
 ## Installation
 
@@ -7,7 +7,7 @@ npm i --save redux-popsicle
 ```
 
 ```js
-import reduxPopsicle from 'redux-popsicle`
+import reduxPopsicle from 'redux-popsicle'
 
 // when you create your store
 const store = createStore(reducer, initialState, applyMiddleware([reduxPopsicle, ...otherMiddleware))
@@ -87,4 +87,3 @@ const weatherRequest = location => {
     }
 }
 ```
-
