@@ -6,7 +6,7 @@ export const popsicleRequest = ticket => {
     .then(res => res.status < 400 ? res.body : Promise.reject(res.status))
 }
 
-export default function(doRequest = popsicleRequest) {
+export function getMiddleware(doRequest = popsicleRequest) {
   return () => next => action => {
     if (action.popsicle) {
       doRequest(action.popsicle).then(body => {
@@ -19,3 +19,5 @@ export default function(doRequest = popsicleRequest) {
     return next(action)
   }
 }
+
+export default getMiddleware(popsicleRequest)

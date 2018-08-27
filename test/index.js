@@ -1,4 +1,4 @@
-import getMiddleware from '../src'
+import {getMiddleware} from '../src'
 
 const middleware = getMiddleware(jest.fn(desiredResult => {
   if (desiredResult === 'SUCCEED') return Promise.resolve('SUCCESS')

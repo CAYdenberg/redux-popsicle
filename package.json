@@ -1,7 +1,7 @@
 {
   "name": "redux-popsicle",
   "version": "0.0.1",
-  "description": "Manage network requests in redux actions with simple, testable object config",
+  "description": "Manage HTTP requests in redux actions with simple, testable object configs",
   "main": "build/node.js",
   "scripts": {
     "build-node": "./node_modules/.bin/parcel build src/index.js --target node --out-file node.js",
