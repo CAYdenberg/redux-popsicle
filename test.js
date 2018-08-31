@@ -53,7 +53,7 @@ describe('middleware', () => {
         })
 
         it('should dispatch the desired error', async() => {
-          const unsuccessfulAction = {type: 'ACTION', popsicle: 'FAIL', error: 'SIMPLE_RESPONSE'}
+          const unsuccessfulAction = {type: 'ACTION', popsicle: 'FAIL', error: 'SIMPLE_ERROR'}
           await actionHandler(unsuccessfulAction)
           expect(next).toHaveBeenCalledWith(unsuccessfulAction)
           expect(store.dispatch).toHaveBeenCalledWith('SIMPLE_ERROR')
@@ -74,7 +74,7 @@ describe('middleware', () => {
         })
 
         it('should call the error function with the popsicle response error code dispatch the result', async() => {
-          const unsuccessfulAction = {type: 'ACTION', popsicle: 'SUCCEED', response, error}
+          const unsuccessfulAction = {type: 'ACTION', popsicle: 'FAIL', response, error}
           await actionHandler(unsuccessfulAction)
           expect(next).toHaveBeenCalledWith(unsuccessfulAction)
           expect(error).toHaveBeenCalledWith('FAILURE')
