@@ -1,6 +1,6 @@
 {
   "name": "redux-popsicle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Manage HTTP requests in redux actions with simple, testable object configs",
   "main": "build/node.js",
   "browser": "build/browser.js",
