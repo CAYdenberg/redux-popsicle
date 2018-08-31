@@ -1,9 +1,9 @@
 {
   "name": "redux-popsicle",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Manage HTTP requests in redux actions with simple, testable object configs",
-  "main": "build/node.js",
-  "browser": "build/browser.js",
+  "main": "dist/node.js",
+  "browser": "dist/browser.js",
   "scripts": {
     "build-node": "./node_modules/.bin/parcel build src/index.js --target node --out-file node.js",
     "build-browser": "./node_modules/.bin/parcel build src/index.js --target browser --out-file browser.js",
