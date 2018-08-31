@@ -41,7 +41,7 @@
     "url" : "https://github.com/CAYdenberg/redux-popsicle.git"
   },
   "bugs": {
-    "url": "https://github.com/CAYdenberg/redux-popsicle/issues",
+    "url": "https://github.com/CAYdenberg/redux-popsicle/issues"
   },
   "jest": {
     "clearMocks": true
