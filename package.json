@@ -1,6 +1,6 @@
 {
   "name": "redux-popsicle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Manage HTTP requests in redux actions with simple, testable object configs",
   "main": "build/node.js",
   "browser": "build/browser.js",
@@ -35,6 +35,13 @@
   },
   "dependencies": {
     "popsicle": "^10.0.1"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/CAYdenberg/redux-popsicle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CAYdenberg/redux-popsicle/issues",
   },
   "jest": {
     "clearMocks": true
